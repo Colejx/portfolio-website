@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- <link href="../css/style.css" rel="stylesheet"> -->
     <!-- Get rid of the browser cashe -->
-    <link id="app-css" rel="stylesheet" href="../css/hobbies.css">
+    <link id="app-css" rel="stylesheet" href="./css/style.css">
     <script>
       // Function to reload CSS by updating the href with a timestamp
       function reloadCSS() {
@@ -32,10 +32,10 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link mx-2" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link active mx-2" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active mx-2" href="./hobbies.html">Hobbies</a>
+                    <a class="nav-link mx-2" href="./hobbies.html">Hobbies</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link mx-2" href="./projects.html">Projects</a>
@@ -46,7 +46,7 @@
                 </ul>
             </div>
             <a class="navbar-brand" href="./index.html">
-                <img src="../resources/logo.png" alt="Bootstrap" class="logo">
+                <img src="./resources/logo.png" alt="Bootstrap" class="logo">
             </a>
         </div>
     </nav>
@@ -63,42 +63,34 @@
 
     <!-- Body  -->
     <div class="home-screen">
-        <!-- <h1 class="hobbies-title">Hobbies</h1> -->
-        <h1 class="hobbies-title">
-            <span style="--i:4" data-text="Hobbies">Hobbies</span>
-            <span style="--i:3" data-text="Passions">Passions</span>
-            <span style="--i:2" data-text="Interests">Interests</span>
-            <span style="--i:1" data-text="Pastimes">Pastimes</span>
-        
-        </h1>
+        <div class="home-info">
+            <h1>Cole Spencer</h1>
+            <!-- <h2>I am a Full Stack Developer</h2> -->
+            <h2>I am a
+                <span style="--i:4" data-text="Fullstack Developer">Fullstack Developer</span>
+                <span style="--i:3" data-text="AI Researcher">AI Researcher</span>
+                <span style="--i:2" data-text="Mobile App Developer">Mobile App Developer</span>
+                <span style="--i:1" data-text="Student">Student</span>
+            </h2>
 
+            
+            <p>a computer science student and aspiring entrepreneur passionate about building impactful software. My work blends clean design, modern technology, and bold ideas to create solutions that make a difference.</p>
+            <div class="btn-sci flex-row d-flex align-items-center">
+                <a href="./resources/Resume.pdf" target="_blank" download="Cole_Spencer_Resume.pdf" class="btn">Download My Resume</a>
+                <div class="sci">
+                    <a href="https://github.com/Colejx"><img src="./resources/github (2).png" alt="GitHub" ></a>
+                    <a href="https://www.linkedin.com/in/colejxspencer/"><img src="./resources/linkedin (1).png" alt="LinkedIn"></a>
+                    <a href="#"><img src="./resources/twitter-x (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="./resources/instagram (1).png" alt="Instagram"></a>
+                </div>
 
-        <div class="hobbies-info">
-            <div class="card card-transparent" style="width: 18rem;">
-                <img src="../resources/reef.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Reef Keeping</h5>
-                    <p class="card-text">I have been really into taking care of animals, and specifically growing coral reefs for over 10 years.
-                        It is a very rewarding hobby, and I love the challenge of keeping a reef tank healthy and thriving.
-                    </p>
-                    
-                </div>
             </div>
-            <div class="card card-transparent" style="width: 18rem;">
-                <img src="../resources/movies.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Watching Movies</h5>
-                    <p class="card-text">I love watching movies with my friends, and specifically comedy movies. My favorite comdedy movies of all time is the Hangover</p>
-                    
-                </div>
-            </div>
-            <div class="card card-transparent" style="width: 18rem;">
-                <img src="../resources/jiujitsu.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Brazilian Jiujitsu</h5>
-                    <p class="card-text">I have been training martial arts for over 10 years and got into Jiujitsu over 5 years ago. It is my favoirte sport 
-                    and I have a blue belt </p>
-                    
+        </div>
+
+        <div class="home-image">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="./resources/Cole-54-Year_Book-removebg-preview.png" alt="Cole Spencer">
                 </div>
             </div>
         </div>
@@ -121,8 +113,8 @@
             </div>
             </div> -->
             <div class="footer-tags">
-                <a class="footer-a" href="https://github.com/Colejx"><img src="../resources/github (2).png" alt="GitHub" >Github</a>
-                <a class="footer-a" href="https://www.linkedin.com/in/colejxspencer/"><img src="../resources/linkedin (1).png" alt="LinkedIn">LinkedIn</a>
+                <a class="footer-a" href="https://github.com/Colejx"><img src="./resources/github (2).png" alt="GitHub" >Github</a>
+                <a class="footer-a" href="https://www.linkedin.com/in/colejxspencer/"><img src="./resources/linkedin (1).png" alt="LinkedIn">LinkedIn</a>
             </div>
         </div>
     </footer>
