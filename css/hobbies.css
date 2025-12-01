@@ -1,0 +1,264 @@
+
+/* Frosted-glass navbar */
+.glass-nav {
+    background: rgba(15, 15, 20, 0.35);          /* translucent tint */
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+    backdrop-filter: saturate(180%) blur(16px);   /* the blur */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.18); */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1030; 
+    visibility: hidden;
+    opacity: 0;
+    animation: show-nav 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+
+.glass-nav .nav-link:hover,
+.glass-nav .nav-link:focus {
+  color: #fff;
+}
+
+
+/* Page background so there's something to blur */
+.page-background {
+  /* pick one of these: a dark color or an image */
+  /* background: radial-gradient(1200px 600px at 20% -10%, #3b3b3b 0%, #1b1b1b 60%, #111 100%); */
+  /* or: background: url('../resources/your-bg.jpg') center/cover fixed no-repeat; */
+  min-height: 100vh;
+}
+
+.navbar-nav
+{
+    font-size: 1rem;
+    padding-right: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-nav 1.5s linear forwards;
+    animation-delay: 1.2s;
+
+
+    
+}
+
+/* Logo */
+.logo {
+    width: 3vmax;
+    height: 3vmax;
+}
+
+@keyframes show-nav {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* Ensure content isn't hidden under fixed-top navbar */
+/* body {
+  padding-top: 6rem;
+} */
+
+/* Body */
+.home-screen {
+    /* display: flex; */
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff !important;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-nav 1.5s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.bars-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+.bars-animation .bar {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(1200px 600px at 20% -10%, #3b3b3b -0%, #1b1b1b 29%, #111 100%);
+    transform: translateY(-100%);
+    animation: show-bars 0.5s ease-in-out forwards;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes show-bars {
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Footer */
+.footer {
+    /* background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; */
+    background: rgba(14, 14, 14, 0.994);          /* translucent tint */
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+    backdrop-filter: saturate(180%) blur(16px);   /* the blur */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.18); */
+    box-shadow: 0 2px 12px rgba(55, 55, 55, 0.2);
+    z-index: 1030; 
+}
+
+.footer-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.footer-tags img {
+    display: inline-flex;
+    /* padding: 4px; */
+    padding: 0.25rem;
+    /* border: 2px solid #7cf03d; */
+    border: 0.125rem solid #29fef0;
+    border-radius: 50%;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
+    color: #29fef0;
+    /* margin: 0 8px; */
+    margin: 0 0.5rem;
+    /* height: 35px; */
+    height: 2.188rem;
+}
+
+.footer-tags img:hover {
+    background: #29fef0;
+    color: #1f242d;
+    transition: 0.3s;
+}
+
+.footer-a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Content */
+.acord-fix {
+    margin-top: 10rem;
+
+    max-height: 80vh;       /* or a fixed px height */
+  overflow-y: auto;       /* vertical scrollbar when needed */
+  overflow-x: hidden;     /* prevent horizontal scroll (optional) */
+  -webkit-overflow-scrolling: touch; /* smooth on iOS */
+    
+    /* Used Chatgpt to generate this to make the accordion transparent  */
+    --bs-accordion-bg: transparent;
+    --bs-accordion-color: #f8f9fa;
+
+    --bs-accordion-border-color: rgba(255,255,255,.15);
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-btn-color: #f8f9fa;
+
+    --bs-accordion-active-bg: rgba(255,255,255,.06); /* subtle when open */
+    --bs-accordion-active-color: #fff;
+
+    --bs-accordion-btn-focus-box-shadow: none; /* optional */
+}
+
+.body-content {
+    align-items: center;
+    display: inline-flex;
+    padding: 4rem;
+    gap: 5rem;
+}
+.project-img {
+    width: 30%;
+    height: 30%;
+}
+
+.hobbies-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card-transparent {
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    color: #fff; 
+    box-shadow: #111 0px 4px 30px ;
+    /* --bs-card-bg: transparent;
+    --bs-card-border-color: rgba(255,255,255,.2);
+    --bs-card-cap-bg: transparent;
+    --bs-card-box-shadow: none;     
+    color: #f8f9fa;  */
+}
+.hobbies-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff !important;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+}
+
+/* for the resume sheet */
+.resume-img {
+    width: 100%;
+    height: auto;
+}
+
+h1 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    /* font-weight: 500; */
+    /* -webkit-text-stroke: .7px #7cf03d; */
+    -webkit-text-stroke: 1px #29fef0;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+@keyframes display-text {
+    25%, 100% {
+        display: none;
+    }
+
+}
+h1 span::before {
+     /* content: attr(data-text);
+    position: absolute;
+    color: #7cf03d;
+    animation: animate-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i)); */
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    /* font-weight: 600; */
+    /* border-right: 2px solid #7cf03d; */
+    border-right: 2px solid #29fef0;
+    /* color: #7cf03d; */
+    color: #29fef0;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: animate-text 7s linear infinite;
+}
+@keyframes animate-text {
+    0%, 20% {
+        width: 0;
+    }
+    25%, 45% {
+        width: 100%;
+    }
+    50%, 100% {
+        width: 0;
+    }
+}

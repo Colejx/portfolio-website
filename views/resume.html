@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cole's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <link href="../css/style.css" rel="stylesheet"> -->
+    <!-- Get rid of the browser cashe -->
+    <link id="app-css" rel="stylesheet" href="../css/resume.css">
+    <script>
+      // Function to reload CSS by updating the href with a timestamp
+      function reloadCSS() {
+        const link = document.getElementById('app-css');
+        const href = link.getAttribute('href').split('?')[0]; // Remove any existing query parameters
+        link.setAttribute('href', `${href}?v=${new Date().getTime()}`); // Append a timestamp to force reload
+      }
+
+      // Call the function to reload CSS when the page loads
+      window.onload = reloadCSS;
+    </script>
+  </head>
+  <body class="page-background">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent glass-nav fixed-top navbar-home" data-bs-theme="dark">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link mx-2" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-2" href="./hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-2" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active mx-2" href="./resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="./index.html">
+                <img src="../resources/logo.png" alt="Bootstrap" class="logo">
+            </a>
+        </div>
+    </nav>
+    <!-- Bars -->
+    <div class="bars-animation">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
+
+
+    <!-- Body  -->
+    <!-- <div class="home-screen">
+        <h1 class="hobbies-title">Resume</h1>
+        <embed src="../resources/Resume.pdf" type="application/pdf" width="100%" height="100%">
+
+    </div> -->
+    <div class="home-screen">
+        <h1 class="hobbies-title">Resume</h1>
+
+        <div class="container pb-5">
+            <div class="card card-transparent">
+            <div class="card-body p-0">
+
+                <div class="table-responsive">
+                <table class="table table-borderless align-middle mb-0" aria-label="Cole Spencer Resume">
+                    <colgroup>
+                    <col style="width: 220px;">
+                    <col>
+                    </colgroup>
+
+                    <tbody>
+                    <!-- Contact -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Contact</th>
+                        <td class="px-4 py-3">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-4"><strong>Phone:</strong> <span class="opacity-75">339-933-3954</span></div>
+                            <div class="col-12 col-md-5"><strong>Email:</strong> <a class="link-info text-decoration-none" href="mailto:colejxs@gmail.com">colejxs@gmail.com</a></div>
+                            <div class="col-12 col-md-3"><strong>Location:</strong> <span class="opacity-75">Hanover, MA</span></div>
+                        </div>
+                        </td>
+                    </tr>
+
+                    <!-- Summary -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Summary</th>
+                        <td class="px-4 py-3">
+                        Innovative, driven CS student at CU Boulder (Class of 2028) with a strong work ethic and track record of academic excellence.
+                        </td>
+                    </tr>
+
+                    <!-- Education -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Education</th>
+                        <td class="px-4 py-3">
+                        <p class="mb-2"><strong>University of Colorado Boulder — College of Engineering &amp; Applied Science</strong><br>
+                            B.S. in Computer Science, Class of 2028
+                        </p>
+                        <ul class="mb-0">
+                            <li>CU GPA (first semester): <strong>3.98</strong></li>
+                            <li>High School: GPA <strong>4.37</strong>; Top 10%; NHS Treasurer; College Book Award; 9 APs</li>
+                        </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Leadership & Impact -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Leadership &amp; Impact</th>
+                        <td class="px-4 py-3">
+                        <p class="mb-2"><strong>Cyber Hawks (Hanover High) — VP of Community Outreach</strong></p>
+                        <ul class="mb-0">
+                            <li>Created the outreach role to connect the club with local orgs and real-world projects.</li>
+                            <li>Led a food-pantry tech initiative (route pickups, driver scheduling, donation org).</li>
+                            <li>Secured a software donation from Ephanti (Conversational AI &amp; Engagement).</li>
+                        </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Experience -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Experience</th>
+                        <td class="px-4 py-3">
+                        <p class="mb-0"><strong>Square Cafe — Busser</strong> <span class="opacity-75">(2023–Present during breaks)</span></p>
+                        </td>
+                    </tr>
+
+                    <!-- Clubs -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Clubs</th>
+                        <td class="px-4 py-3">
+                        <p class="mb-1"><strong>CU Boulder:</strong> F1 Club (Endurance &amp; SAE), Robotics Club, Boulder Freeride</p>
+                        <p class="mb-0"><strong>Hanover High:</strong> Cyber Hawks (CS), Math Club (Competition), Chess, Board Game, Dirty Work Eco</p>
+                        </td>
+                    </tr>
+
+                    <!-- Athletics -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Athletics</th>
+                        <td class="px-4 py-3">
+                        <ul class="mb-0">
+                            <li>Wrestling — Lettered (Jr., Sr.)</li>
+                            <li>Rugby — Lettered (Soph.)</li>
+                            <li>Brazilian Jiu-Jitsu — blue belt, 4 years</li>
+                        </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Volunteering -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Volunteering</th>
+                        <td class="px-4 py-3">
+                        <ul class="mb-0">
+                            <li>Hanover Food Pantry — Stocking donations (2022–2024)</li>
+                            <li>Duxbury Beach — Cleanup &amp; planting (2021–2024)</li>
+                            <li>Council on Aging — Bi-monthly tech support (2021–2024)</li>
+                            <li>Tutoring (2022–2024)</li>
+                            <li>“In The Hot Seat” — Clip editor for business podcast (2023–2024)</li>
+                        </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Courses & Programs -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Courses &amp; Programs</th>
+                        <td class="px-4 py-3">
+                        <ul class="mb-0">
+                            <li><strong>Code With Chris</strong> (2021–2022)</li>
+                            <li><strong>Hacker Highschool</strong> — ISECOM (2023)</li>
+                            <li><strong>Three.js Journey</strong> (2023–Present)</li>
+                            <li><strong>The Academies — Harvard Student Agencies</strong> (Jul 2022): Coding L1; Business Entrepreneurship 1</li>
+                        </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Highlights -->
+                    <tr class="border-top">
+                        <th scope="row" class="text-uppercase text-info-emphasis px-4 py-3">Highlights</th>
+                        <td class="px-4 py-3">
+                        <span class="badge rounded-pill text-bg-info me-2 mb-2">CU GPA 3.98</span>
+                        <span class="badge rounded-pill text-bg-info me-2 mb-2">HS GPA 4.37</span>
+                        <span class="badge rounded-pill text-bg-info me-2 mb-2">Top 10% Class</span>
+                        <span class="badge rounded-pill text-bg-info me-2 mb-2">NHS Treasurer</span>
+                        <span class="badge rounded-pill text-bg-info me-2 mb-2">9 APs</span>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-light py-5">
+        <div class="container">
+            <!-- <div class="row g-4">
+            <div class=" col-md-6">
+                <p class="mb-0 opacity-75">© 2025 Cole Spencer</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <h5 class="mb-3">Links</h5>
+                <ul class="list-unstyled mb-0">
+                <li class="footer-sci"><a href="#"><img src="../resources/github (2).png" alt="GitHub">GitHub</a></li>
+                <li class="footer-sci"><a href="#"><img src="../resources/linkedin (1).png" alt="LinkedIn">LinkedIn</a></li>
+                
+                </ul>
+            </div>
+            </div> -->
+            <div class="footer-tags">
+                <a class="footer-a" href="https://github.com/Colejx"><img src="../resources/github (2).png" alt="GitHub" >Github</a>
+                <a class="footer-a" href="https://www.linkedin.com/in/colejxspencer/"><img src="../resources/linkedin (1).png" alt="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    
+  </body>
+</html>

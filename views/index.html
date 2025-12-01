@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cole's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <link href="../css/style.css" rel="stylesheet"> -->
+    <!-- Get rid of the browser cashe -->
+    <link id="app-css" rel="stylesheet" href="../css/style.css">
+    <script>
+      // Function to reload CSS by updating the href with a timestamp
+      function reloadCSS() {
+        const link = document.getElementById('app-css');
+        const href = link.getAttribute('href').split('?')[0]; // Remove any existing query parameters
+        link.setAttribute('href', `${href}?v=${new Date().getTime()}`); // Append a timestamp to force reload
+      }
+
+      // Call the function to reload CSS when the page loads
+      window.onload = reloadCSS;
+    </script>
+  </head>
+  <body class="page-background">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent glass-nav fixed-top navbar-home" data-bs-theme="dark">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active mx-2" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-2" href="./hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-2" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-2" href="./resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="./index.html">
+                <img src="../resources/logo.png" alt="Bootstrap" class="logo">
+            </a>
+        </div>
+    </nav>
+    <!-- Bars -->
+    <div class="bars-animation">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
+
+
+    <!-- Body  -->
+    <div class="home-screen">
+        <div class="home-info">
+            <h1>Cole Spencer</h1>
+            <!-- <h2>I am a Full Stack Developer</h2> -->
+            <h2>I am a
+                <span style="--i:4" data-text="Fullstack Developer">Fullstack Developer</span>
+                <span style="--i:3" data-text="AI Researcher">AI Researcher</span>
+                <span style="--i:2" data-text="Mobile App Developer">Mobile App Developer</span>
+                <span style="--i:1" data-text="Student">Student</span>
+            </h2>
+
+            
+            <p>a computer science student and aspiring entrepreneur passionate about building impactful software. My work blends clean design, modern technology, and bold ideas to create solutions that make a difference.</p>
+            <div class="btn-sci flex-row d-flex align-items-center">
+                <a href="../resources/Resume.pdf" target="_blank" download="Cole_Spencer_Resume.pdf" class="btn">Download My Resume</a>
+                <div class="sci">
+                    <a href="https://github.com/Colejx"><img src="../resources/github (2).png" alt="GitHub" ></a>
+                    <a href="https://www.linkedin.com/in/colejxspencer/"><img src="../resources/linkedin (1).png" alt="LinkedIn"></a>
+                    <a href="#"><img src="../resources/twitter-x (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="../resources/instagram (1).png" alt="Instagram"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="home-image">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="../resources/Cole-54-Year_Book-removebg-preview.png" alt="Cole Spencer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-light py-5">
+        <div class="container">
+            <!-- <div class="row g-4">
+            <div class=" col-md-6">
+                <p class="mb-0 opacity-75">© 2025 Cole Spencer</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <h5 class="mb-3">Links</h5>
+                <ul class="list-unstyled mb-0">
+                <li class="footer-sci"><a href="#"><img src="../resources/github (2).png" alt="GitHub">GitHub</a></li>
+                <li class="footer-sci"><a href="#"><img src="../resources/linkedin (1).png" alt="LinkedIn">LinkedIn</a></li>
+                
+                </ul>
+            </div>
+            </div> -->
+            <div class="footer-tags">
+                <a class="footer-a" href="https://github.com/Colejx"><img src="../resources/github (2).png" alt="GitHub" >Github</a>
+                <a class="footer-a" href="https://www.linkedin.com/in/colejxspencer/"><img src="../resources/linkedin (1).png" alt="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    
+  </body>
+</html>
